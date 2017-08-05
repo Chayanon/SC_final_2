@@ -3,36 +3,40 @@
 
 <head>
 
+    <title>Sharing Citizen</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sharing Citizen</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+        <!-- <link href="css/new-age.min.css" rel="stylesheet"> -->
 </head>
 
 <body>
-    <div id="wrapper">
+        <div id="wrapper">
         <div class="overlay"></div>
     
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    
+                </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Sharing Experience <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -54,40 +58,30 @@
         </nav>
         <!-- /#sidebar-wrapper -->
 
-       
+        <!-- Page Content -->
          <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">  
-            <div class="navbar-header">
-                <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
-                    <span class="hamb-top"></span>
-                    <!-- <span class="hamb-middle"></span>  -->
-                    <span class="hamb-bottom"></span>
-                </button>
+        <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+             <!-- <span class="hamb-middle"></span>  -->
+            <span class="hamb-bottom"></span>
+          </button>
 
-                <a href="#" id="sclogo">
-                    <img src="SCPic/logo.png" alt="sc-logo" height="50%" width="50%">
-                </a>
+            <a href="#" id="sclogo">
+                <img src="SCPic/logo.png" alt="sc-logo" height="50%" width="50%">
+            </a>
 
-                <a href="#" id="sclogin">
-                    <img src="SCPic/circle.png" alt="sc-circle" height="50em" width="50em">
-                </a>
-            </div>
-          </nav>  
-        <div class="container">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        
-                            <a class="navbar-brand" href="http://disputebills.com"><img src="SCPic/logo.png" alt="sc-logo" height="50%" width="50%">
-                    </a>
-                    </div>
-                </div>
-                <!--/.container-fluid -->
-            </nav>
+            <a href="#" id="sclogin">
+                <img src="SCPic/circle.png" alt="sc-circle" height="50em" width="50em">
+            </a>
         </div>
-    <!-- /#wrapper -->
-    </div>
+          </nav>  
+        <!-- /#page-content-wrapper -->
 
-    <!-- Half Page Image Background Carousel Header -->
+    </div>
+    <!-- /#wrapper -->
+
+       <!-- Half Page Image Background Carousel Header -->
     <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -143,21 +137,14 @@
 
     </header>
 
-    
-
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 9000 //changes the speed
-    })
-    </script>
+
+    <!-- Menu Toggle Script -->
     <script>
     $(document).ready(function () {
         var trigger = $('.hamburger'),
@@ -187,7 +174,12 @@
         }); 
     });
     </script>
-
+    <script>
+        $('.carousel').carousel({
+        interval: 9000 //changes the speed
+    })
+    
+    </script>
 </body>
 
 </html>
