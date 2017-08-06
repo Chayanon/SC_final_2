@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="https://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,9 +35,9 @@
         <!-- Sidebar -->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
             <ul class="nav sidebar-nav">
-                <li class="sidebar-brand">
-                    
-                </li>
+                 <li class="dropdown-header"></li>
+                <li class="dropdown-header"></li>
+                <li class="dropdown-header"></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Sharing Experience <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -44,6 +45,7 @@
                     <li><a href="#">Event Management</a></li>
                   </ul>
                 </li>
+
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Sharing Oppotunities <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
@@ -51,6 +53,7 @@
                     <li><a href="#">Graduated</a></li>
                   </ul>
                 </li>
+
                 <li>
                     <a href="#"><i class="fa fa-fw fa-contact"></i> Contact Us</a>
                 </li>
@@ -137,11 +140,17 @@
 
     </header>
 
+    
+
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Slick Carousel-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 
     <!-- Menu Toggle Script -->
@@ -172,6 +181,11 @@
         $('[data-toggle="offcanvas"]').click(function () {
                 $('#wrapper').toggleClass('toggled');
         }); 
+
+        
+     
+	
+	
     });
     </script>
     <script>
